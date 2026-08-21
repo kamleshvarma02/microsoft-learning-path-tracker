@@ -1,22 +1,41 @@
 # Microsoft Learning Path Tracker
 
-## Features
-- Cloud, AI/Data and Security domain picker
-- Completed / Available / Locked states
-- Prerequisite logic handled in app code
-- Progress saved in localStorage
-- Optional Gemini AI explanation
-- Loading state and fallback if AI fails
-- Microsoft Learn links
+A React-based web application that helps users follow structured Microsoft certification learning paths across different technology domains.
 
-## Run
-```bash
-npm install
-npm run dev
-```
+## 🚀 Features
 
-## Optional AI
-Copy `.env.example` to `.env` and add your Gemini API key.
+- Select from multiple learning domains:
+  - Cloud
+  - AI & Data
+  - Security
+- View structured Microsoft certification learning paths
+- Prerequisite-based certification unlocking
+- Track completed certifications
+- Automatic progress percentage calculation
+- Progress persistence using browser localStorage
+- AI-powered explanation for the recommended next learning step
+- Links to relevant Microsoft Learn resources
+- Responsive and user-friendly interface
 
-### Interview explanation
-`statusOf()` computes completed/available/locked using prerequisite IDs. AI never chooses the next certificate; it only explains the already-selected step. `complete()` only accepts an available step. `localStorage` persists progress. If the AI call fails, `fallback()` prevents a blank screen or crash.
+## 🛠️ Technologies Used
+
+- React
+- JavaScript
+- CSS
+- Vite
+- Browser LocalStorage
+- Gemini API
+
+## 📂 Project Structure
+
+```text
+mic-learning-path-tracker/
+│
+├── src/
+│   ├── App.jsx       # Main application logic
+│   ├── App.css       # Application styling
+│   └── main.jsx      # React application entry point
+│
+├── index.html
+├── package.json
+└── README.md
